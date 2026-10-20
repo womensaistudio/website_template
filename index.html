@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My AI Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  👋 You don't need to edit this file!
+  Your website's words and colors come from my-website.js.
+-->
+<main class="page">
+
+  <header class="hero">
+    <div class="emoji" id="emoji" aria-hidden="true">✨</div>
+    <h1 id="siteName">My AI Website</h1>
+    <p class="tagline" id="tagline"></p>
+  </header>
+
+  <p class="description" id="description"></p>
+
+  <section class="tool" aria-labelledby="inputLabel">
+    <form id="askForm">
+      <label for="userInput" id="inputLabel">Ask me anything</label>
+      <textarea id="userInput" rows="3" maxlength="2000" required></textarea>
+
+      <div class="examples" id="examplesRow">
+        <span class="try">Try:</span>
+        <div class="chips" id="examples"></div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="askButton">Ask</button>
+        <span class="mode" id="modeNote"></span>
+      </div>
+    </form>
+  </section>
+
+  <section class="answer" id="answerBox" aria-live="polite" hidden>
+    <h2 id="answerTitle">Answer</h2>
+    <div class="answer-text" id="answerText"></div>
+  </section>
+
+  <footer class="footer">
+    Made by <strong id="madeBy">you</strong> at Women’s AI Studio
+  </footer>
+
+</main>
+
+<script src="my-website.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# 🔒 Your secret API key. NEVER put this on GitHub!
+api-key.txt
+.env
+
+# Computer clutter
+.DS_Store
+Thumbs.db
+node_modules/
